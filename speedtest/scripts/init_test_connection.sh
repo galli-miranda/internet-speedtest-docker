@@ -21,7 +21,6 @@ do
     curl -i -XPOST 'http://db:8086/write?db=speedtest' --data-binary "upload,host=local value=$UPLOAD"
     curl -i -XPOST 'http://db:8086/write?db=speedtest' --data-binary "ping,host=local value=$PING"
     curl -i -XPOST 'http://db:8086/write?db=speedtest' --data-binary "ploss, host=local value=$PLOSS"
-     
     sleep $TEST_INTERVAL
 
 done
